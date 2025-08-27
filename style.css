@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+  --font-secundaria: "Lora", serif;
+  --font-principal: "Cinzel Decorative", serif;
+  --font-normal: "Raleway", sans-serif;
+  --cor-fundo: #cfc5c5;
+  --cor-principal: #221915;
+  --cor-destaque: #bb801b;
+  --cor-de-rosa: #fab26a;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    font-size: 1rem;
+    font-family: var(--font-normal);
+}
+
+.cabecalho{
+  width: 100%;
+}
+
+.cabecalho_imagem{
+  width: 100vw;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 6px 5px;
+  max-width: 400px;
+  background: #fff;
+  padding: 8px 6px;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+/* input */
+.search-container input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 6px 8px;
+  font-size: 0.8rem;
+  font-family: var(--font-principal);
+  border-radius: 50px;
+  background: transparent;
+}
+
+/* botão */
+.search-container button {
+  border: none;
+  background: transparent;
+  color: var(--cor-principal);
+  font-size: 1rem;
+  padding: 6px 8px;
+  border-radius: 50%;
+  font-family: var(--font-secundaria);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+/* foco no input */
+.search-container:focus-within {
+  box-shadow: 0 6px 18px var(--cor-principal)(74, 111, 165, 0.4);
+}
+
+.apresentacaoConteiner{
+  margin: 5px;
+  width: 100vw;
+}
+
+.separadorDeApresentacao{
+  display: flex;
+}
+
+.apresentacaoPerfume{
+  margin: 2px;
+  padding: 2px;
+  border: 2px solid var(--cor-principal);
+  width: 100%;
+  height: 50vw;
+}

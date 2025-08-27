@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amber Perfumaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="showroom.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho_imagem" src="/perfumesDiagrama/cabaçalho.jpg" alt="Cabeçalho">
+        <div class="search-container">
+            <input type="text" id="searchBox" placeholder="Digite para buscar..." />
+            <button onclick="buscar()">Buscar</button>
+        </div>      
+    </header>
+    <main>
+        <section class="sr-showroom">
+            <div class="sr-container">
+                <div class="sr-pass-button sr-pass-button-left" onclick="sr.previousPage()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                </div>
+                <div class="sr-content" onmouseenter="sr.stopAuto()" onmouseleave="sr.startAuto()">
+                    <ul>
+                        <li>
+                            <img src="/perfumesDiagrama/propagandaDePreço.jpg" alt="Imagem de propaganda" >
+                            
+                        </li>
+                        <li><img src="/perfumesDiagrama/propaganda1Million.jpg" alt="Imagem de Propagadanda" ></li>
+                        <li><img src="/perfumesDiagrama/propaganda212.jpg" alt="Imagem de Propagadanda" ></li>
+                        <li><img src="/perfumesDiagrama/propagandaAngel.jpg" alt="Imagem de Propagadanda" ></li>
+                        <li><img src="/perfumesDiagrama/propagandaEuphoria.jpg" alt="Imagem de Propagadanda" ></li>
+                        <li><img src="/perfumesDiagrama/propagandaFerrari.jpg" alt="Imagem de Propagadanda" ></li>
+                        <li><img src="/perfumesDiagrama/propagandaHipinotPoison.jpg" alt="Imagem de Propagadanda" ></li>
+                        <li><img src="/perfumesDiagrama/propagandaLaVieBele.jpg" alt="Imagem de Propagadanda" ></li>
+                     </ul>
+                </div>
+                <div class="sr-pass-button sr-pass-button-right" onclick="sr.nextPage()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="sr-paginate"></div>
+        </section>
+        <section class="apresentacaoConteiner">
+            <div class="separadorDeApresentacao">
+                <div class="apresentacaoPerfume" id="aprt1">
+
+                </div>
+                <div class="apresentacaoPerfume" id="aprt2">
+
+                </div>
+            </div>
+            <div class="separadorDeApresentacao">
+                <div class="apresentacaoPerfume" id="aprt3">
+
+                </div>
+                <div class="apresentacaoPerfume" id="aprt4">
+
+                </div>
+            </div>
+            <div class="separadorDeApresentacao">
+                <div class="apresentacaoPerfume" id="aprt5">
+
+                </div>
+                <div class="apresentacaoPerfume" id="aprt6">
+
+                </div>
+            </div>
+            <div class="separadorDeApresentacao">
+                <div class="apresentacaoPerfume" id="aprt7">
+
+                </div>
+                <div class="apresentacaoPerfume" id="aprt8">
+
+                </div>
+            </div>
+            <div class="separadorDeApresentacao">
+                <div class="apresentacaoPerfume" id="aprt9">
+
+                </div>
+                <div class="apresentacaoPerfume" id="aprt0">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+
+     <script src="main.js"></script>
+     ,<script src="showroom.js"></script>
+</body>
+</html>
