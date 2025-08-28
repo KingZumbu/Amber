@@ -310,57 +310,59 @@ function motorDeEscolha(){
         let produto0inicial = arr[0]
 
         let prodt1 = document.getElementById("aprt1")
-        prodt1.style.backgroundImage = `url(${perfumes[produto1inicial]["foto"]})`;
-        prodt1.style.backgroundSize = "cover";   // cobre toda a div
-        prodt1.style.backgroundPosition = "center"; // centraliza
+        const imgprdt1 = prodt1.querySelector("img")
+        imgprdt1.src = perfumes[produto1inicial]["foto"]
 
         let prodt2 = document.getElementById("aprt2")
-        prodt2.style.backgroundImage = `url(${perfumes[produto2inicial]["foto"]})`;
-        prodt2.style.backgroundSize = "cover";   // cobre toda a div
-        prodt2.style.backgroundPosition = "center"; // centraliza
+        const imgprdt2 = prodt2.querySelector("img")
+        imgprdt2.src = perfumes[produto2inicial]["foto"]
 
         let prodt3 = document.getElementById("aprt3")
-        prodt3.style.backgroundImage = `url(${perfumes[produto3inicial]["foto"]})`;
-        prodt3.style.backgroundSize = "cover";   // cobre toda a div
-        prodt3.style.backgroundPosition = "center"; // centraliza
+        const imgprdt3 = prodt3.querySelector("img")
+        imgprdt3.src = perfumes[produto3inicial]["foto"]
 
         let prodt4 = document.getElementById("aprt4")
-        prodt4.style.backgroundImage = `url(${perfumes[produto4inicial]["foto"]})`;
-        prodt4.style.backgroundSize = "cover";   // cobre toda a div
-        prodt4.style.backgroundPosition = "center"; // centraliza
+        const imgprdt4 = prodt4.querySelector("img")
+        imgprdt4.src = perfumes[produto4inicial]["foto"]
 
         let prodt5 = document.getElementById("aprt5")
-        prodt5.style.backgroundImage = `url(${perfumes[produto5inicial]["foto"]})`;
-        prodt5.style.backgroundSize = "cover";   // cobre toda a div
-        prodt5.style.backgroundPosition = "center"; // centraliza
+        const imgprdt5 = prodt5.querySelector("img")
+        imgprdt5.src = perfumes[produto5inicial]["foto"]
 
         let prodt6 = document.getElementById("aprt6")
-        prodt6.style.backgroundImage = `url(${perfumes[produto6inicial]["foto"]})`;
-        prodt6.style.backgroundSize = "cover";   // cobre toda a div
-        prodt6.style.backgroundPosition = "center"; // centraliza
+        const imgprdt6 = prodt6.querySelector("img")
+        imgprdt6.src = perfumes[produto6inicial]["foto"]
 
         let prodt7 = document.getElementById("aprt7")
-        prodt7.style.backgroundImage = `url(${perfumes[produto7inicial]["foto"]})`;
-        prodt7.style.backgroundSize = "cover";   // cobre toda a div
-        prodt7.style.backgroundPosition = "center"; // centraliza
+        const imgprdt7 = prodt7.querySelector("img")
+        imgprdt7.src = perfumes[produto7inicial]["foto"]
 
         let prodt8 = document.getElementById("aprt8")
-        prodt8.style.backgroundImage = `url(${perfumes[produto8inicial]["foto"]})`;
-        prodt8.style.backgroundSize = "cover";   // cobre toda a div
-        prodt8.style.backgroundPosition = "center"; // centraliza
+        const imgprdt8 = prodt8.querySelector("img")
+        imgprdt8.src = perfumes[produto8inicial]["foto"]
 
         let prodt9 = document.getElementById("aprt9")
-        prodt9.style.backgroundImage = `url(${perfumes[produto9inicial]["foto"]})`;
-        prodt9.style.backgroundSize = "cover";   // cobre toda a div
-        prodt9.style.backgroundPosition = "center"; // centraliza
+        const imgprdt9 = prodt9.querySelector("img")
+        imgprdt9.src = perfumes[produto9inicial]["foto"]
 
         let prodt0 = document.getElementById("aprt0")
-        prodt0.style.backgroundImage = `url(${perfumes[produto0inicial]["foto"]})`;
-        prodt0.style.backgroundSize = "cover";   // cobre toda a div
-        prodt0.style.backgroundPosition = "center"; // centraliza
+        const imgprdt0 = prodt0.querySelector("img")
+        imgprdt0.src = perfumes[produto0inicial]["foto"]
 }
 
+function irParaPagina(pagina){
+    window.location.href = pagina
+}
 
+function enviarEmail() {
+      const email = "juk04Igor@gmail.com.br"; // coloque seu e-mail aqui
+      const assunto = "Contato via site";
+      const corpo = "Olá, gostaria de falar sobre...";
+
+      const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`;
+
+      window.location.href = mailtoLink;
+}
 
 
 
