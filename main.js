@@ -5,6 +5,17 @@ const p4 = "79,90"
 const p5 = "39,90"
 const meuCelular = "5525993106425"
 
+let produto1inicial = 0
+let produto2inicial = 0
+let produto3inicial = 0
+let produto4inicial = 0
+let produto5inicial = 0 
+let produto6inicial = 0
+let produto7inicial = 0
+let produto8inicial = 0
+let produto9inicial = 0
+let produto0inicial = 0
+
 const perfumes={
     "1":{"nome":"Kayak",
         "sexo":"masculino",
@@ -364,11 +375,150 @@ function enviarEmail() {
       window.location.href = mailtoLink;
 }
 
+function aparece(preco){
+    document.getElementById(preco).classList.remove("hide")
+}
+
+function porPreco(){
+    
+    let xunda1 = perfumes[produto1inicial]["tipo"]
+    if(xunda1 == "normal"){
+        document.getElementById("1pr1").textContent = p1;
+        document.getElementById("1pr2").textContent = p3;
+    } if(xunda1 == "especial"){
+        document.getElementById("1pr1").textContent = p2;
+        document.getElementById("1pr2").textContent = p4;
+    } else {
+        return console.log
+    }
+
+    let xunda2 = perfumes[produto2inicial]["tipo"]
+    if(xunda2 == "normal"){
+        document.getElementById("2pr1").textContent = p1;
+        document.getElementById("2pr2").textContent = p3;
+    } if(xunda2 == "especial"){
+        document.getElementById("2pr1").textContent = p2;
+        document.getElementById("2pr2").textContent = p4;
+    } else {
+        return console.log
+    }
+
+    let xunda3 = perfumes[produto3inicial]["tipo"]
+    if(xunda3 == "normal"){
+        document.getElementById("3pr1").textContent = p1;
+        document.getElementById("3pr2").textContent = p3;
+    } if(xunda3 == "especial"){
+        document.getElementById("3pr1").textContent = p2;
+        document.getElementById("3pr2").textContent = p4;
+    } else {
+        return console.log
+    }
+
+    let xunda4 = perfumes[produto4inicial]["tipo"]
+    if(xunda4 == "normal"){
+        document.getElementById("4pr1").textContent = p1;
+        document.getElementById("4pr2").textContent = p3;
+    } if(xunda4 == "especial"){
+        document.getElementById("4pr1").textContent = p2;
+        document.getElementById("4pr2").textContent = p4;
+    } else {
+        return console.log
+    }
+
+    let xunda5 = perfumes[produto5inicial]["tipo"]
+    if(xunda5 == "normal"){
+        document.getElementById("5pr1").textContent = p1;
+        document.getElementById("5pr2").textContent = p3;
+    } if(xunda5 == "especial"){
+        document.getElementById("5pr1").textContent = p2;
+        document.getElementById("5pr2").textContent = p4;
+    } else {
+        return console.log
+    }
+
+    let xunda6 = perfumes[produto6inicial]["tipo"]
+    if(xunda6 == "normal"){
+        document.getElementById("6pr1").textContent = p1;
+        document.getElementById("6pr2").textContent = p3;
+    } if(xunda6 == "especial"){
+        document.getElementById("6pr1").textContent = p2;
+        document.getElementById("6pr2").textContent = p4;
+    } else {
+        return console.log
+    }
+
+    let xunda7 = perfumes[produto7inicial]["tipo"]
+    if(xunda7 == "normal"){
+        document.getElementById("7pr1").textContent = p1;
+        document.getElementById("7pr2").textContent = p3;
+    } if(xunda7 == "especial"){
+        document.getElementById("7pr1").textContent = p2;
+        document.getElementById("7pr2").textContent = p4;
+    } else {
+        return console.log
+    }
+
+    let xunda8 = perfumes[produto8inicial]["tipo"]
+    if(xunda8 == "normal"){
+        document.getElementById("8pr1").textContent = p1;
+        document.getElementById("8pr2").textContent = p3;
+    } if(xunda8 == "especial"){
+        document.getElementById("8pr1").textContent = p2;
+        document.getElementById("8pr2").textContent = p4;
+    } else {
+        return console.log
+    }
+
+    let xunda9 = perfumes[produto9inicial]["tipo"]
+    if(xunda9 == "normal"){
+        document.getElementById("9pr1").textContent = p1;
+        document.getElementById("9pr2").textContent = p3;
+    } if(xunda9 == "especial"){
+        document.getElementById("9pr1").textContent = p2;
+        document.getElementById("9pr2").textContent = p4;
+    } else {
+        return console.log
+    }
+
+    let xunda0 = perfumes[produto0inicial]["tipo"]
+    if(xunda0 == "normal"){
+        document.getElementById("0pr1").textContent = p1;
+        document.getElementById("0pr2").textContent = p3;
+    } if(xunda0 == "especial"){
+        document.getElementById("0pr1").textContent = p2;
+        document.getElementById("0pr2").textContent = p4;
+    } else {
+        return console.log
+    }
+}
+
+function escolherPerfumeNoCatalogo(zidane){
+    document.getElementById("catalogoFeminino").classList.remove("hide")
+    document.getElementById("nomeIndividual").textContent = perfumes[zidane]["nome"]
+    document.getElementById("imgIndividual").src = perfumes[zidane]["foto"]
+
+}
+
+function escolherMasculino(){
+    document.getElementById("ativadoFeminino").classList.remove("ativadoSexoPerfume")
+    document.getElementById("ativadoMasculino").classList.add("ativadoSexoPerfume")
+
+    document.getElementById("opcoesMasculina").classList.remove("hide")
+    document.getElementById("opcoesFemininas").classList.add('hide')
+}
+
+function escolherFeminino(){
+    document.getElementById("ativadoFeminino").classList.add("ativadoSexoPerfume")
+    document.getElementById("ativadoMasculino").classList.remove("ativadoSexoPerfume")
+
+    document.getElementById("opcoesMasculina").classList.add("hide")
+    document.getElementById("opcoesFemininas").classList.remove('hide')
+}
 
 
 
 
 
 document.addEventListener("DOMContentLoaded", function() {
-   motorDeEscolha()
+    motorDeEscolha()
 });

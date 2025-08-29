@@ -105,6 +105,90 @@ body{
   border-radius: 10%;
 }
 
+.perfumesComprarDetaque{
+  justify-content: space-between;
+  display: flex;
+  margin: 10%;
+}
+
+.perfumesComprarDetaquemls{
+  font-size: 1.2rem;
+  font-family: var(--font-normal);
+  margin: 0;
+}
+
+
+
+
+
+
+
+.catalogoTitulo{
+  font-size: 2rem;
+  font-family: var(--font-principal);
+  margin: 0 10% 10px;
+}
+
+.catalogoEscolhaSexo{
+  font-family: var(--font-principal);
+  font-size: 1rem;
+  margin: 5px 10%;
+}
+
+.catalogoSexoIndividual{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--cor-principal);
+  font-family: var(--font-normal);
+}
+
+.ativadoSexoPerfume{
+  font-weight: 700;
+}
+
+.nomeIndividual{
+  margin: 10px;
+  font-size: 1rem;
+
+}
+
+.imgIndividual{
+  width: 45%;
+  border-radius: 12%;
+  border: solid 2px var(--cor-destaque);
+}
+
+.individual100ml{
+  margin: 5px;
+  font-size: 0,8rem;
+}
+
+.individualPreco{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.catalogoFemiOpcoes{
+  margin: 30px 0;
+}
+
+.opcoesDiv{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 10%;
+  color: var(--cor-destaque);
+  font-size: 1.1rem;
+}
+
+.perfumesOpcoesEscolha{
+  background-color: var(--cor-principal);
+  padding: 5px;
+  border-radius: 10%;
+  font-family: var(--font-secundaria);
+}
 
 
 
@@ -122,4 +206,8 @@ body{
 
 .rodTexto{
   margin: 10px 0;
+}
+
+.hide{
+  display: none;
 }
