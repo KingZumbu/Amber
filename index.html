@@ -192,21 +192,11 @@
         </section>
         <section class="catalogo">
             <p class="catalogoTitulo">Catálogo</p>
-            <p class="catalogoEscolhaSexo ativadoSexoPerfume" id="ativadoFeminino" onclick="escolherFeminino()">Feminino</p>
-            <p class="catalogoEscolhaSexo" id="ativadoMasculino" onclick="escolherMasculino()">Masculino</p>
-            <div class="catalogoSexo">
-                <div class="catalogoSexoIndividual hide" id="catalogoFeminino">
-                    <p class="nomeIndividual" id="nomeIndividual"></p>
-                    <img src="" alt="" class="imgIndividual" id="imgIndividual">
-                    <div class="individualPreco">
-                        <p class="individual100ml">100ml</p>
-                        <p class="individualPagar" id="individualPagar100"></p>
-                    </div>
-                    <div class="individualPreco">
-                        <p class="individual100ml">50ml</p>
-                        <p class="individualPagar" id="individualPagar50"></p>
-                    </div>
-                </div>
+            <div class="catTitulos">
+                <p class="catalogoEscolhaSexo ativadoSexoPerfume" id="ativadoFeminino" onclick="escolherFeminino()">Feminino</p>
+                <p class="catalogoEscolhaSexo" id="ativadoMasculino" onclick="escolherMasculino()">Masculino</p>
+            </div>
+            <div class="catalogoSexo">  
                 <div class="catalogoFemiOpcoes" id="opcoesFemininas">
                     <div class="opcoesDiv">
                         <p class="perfumesOpcoesEscolha" onclick="escolherPerfumeNoCatalogo(35)">Scandal</p>
@@ -347,13 +337,27 @@
                         <p class="perfumesOpcoesEscolha" onclick="escolherPerfumeNoCatalogo(34)">Mandarino</p>
                     </div>
                 </div>
+                <div class="catalogoSexoIndividual hide" id="catalogoFeminino">
+                    <p class="nomeIndividual" id="nomeIndividual"></p>
+                    <img src="" alt="" class="imgIndividual" id="imgIndividual">
+                    <div class="individualPreco">
+                        <p class="individual100ml">100ml</p>
+                        <p class="individualPagar" id="individualPagar100"></p>
+                    </div>
+                    <div class="individualPreco">
+                        <p class="individual100ml">50ml</p>
+                        <p class="individualPagar" id="individualPagar50"></p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <footer class="rodape">
-        <p class="rodTexto" onclick="irParaPagina('https://www.instagram.com/amber__perfumaria?igsh=MXQzb29rODN1OHM2Zg==')">Instagram</p>
-        <p class="rodTexto" onclick="irParaPagina('https://wa.me/5524993106425')">Fale Conosco</p>
-        <p class="rodTexto" onclick="enviarEmail()">Suporte</p>
+        <div class="rodapeElegante">
+            <p class="rodTexto" onclick="irParaPagina('https://www.instagram.com/amber__perfumaria?igsh=MXQzb29rODN1OHM2Zg==')">Instagram</p>
+            <p class="rodTexto" onclick="irParaPagina('https://wa.me/5524993106425')">Fale Conosco</p>
+            <p class="rodTexto" onclick="enviarEmail()">Suporte</p>
+        </div>
         <p class="rodTexto">Sac - (24) 99310 6425</p>
     </footer>
 

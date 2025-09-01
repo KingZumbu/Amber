@@ -6,10 +6,12 @@
   --font-secundaria: "Lora", serif;
   --font-principal: "Cinzel Decorative", serif;
   --font-normal: "Raleway", sans-serif;
+
   --cor-fundo: #cfc5c5;
   --cor-principal: #221915;
   --cor-destaque: #bb801b;
   --cor-de-rosa: #fab26a;
+  --color-accent: #E2C091;
 }
 
 body{
@@ -117,6 +119,14 @@ body{
   margin: 0;
 }
 
+.preco{
+  background-color: var(--cor-destaque);
+  color: var(--cor-principal);
+  padding: 5px 10px;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5),
+}
+
 
 
 
@@ -129,8 +139,16 @@ body{
   margin: 0 10% 10px;
 }
 
+.catTitulos{
+  display: flex;
+  transition: border-color 0.3s ease;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  justify-content: center;
+}
+
 .catalogoEscolhaSexo{
-  font-family: var(--font-principal);
+  font-family: var(--font-secundaria);
   font-size: 1rem;
   margin: 5px 10%;
 }
@@ -142,6 +160,7 @@ body{
   flex-direction: column;
   color: var(--cor-principal);
   font-family: var(--font-normal);
+  margin: 0 0 20px 0;
 }
 
 .ativadoSexoPerfume{
@@ -168,11 +187,11 @@ body{
 .individualPreco{
   display: flex;
   justify-content: space-between;
-  margin: 5px 0;
+  margin: 5px 10px;
 }
 
 .catalogoFemiOpcoes{
-  margin: 30px 0;
+  margin: 30px 0 15px 0;
 }
 
 .opcoesDiv{
@@ -180,14 +199,24 @@ body{
   justify-content: space-between;
   margin: 5px 10%;
   color: var(--cor-destaque);
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .perfumesOpcoesEscolha{
   background-color: var(--cor-principal);
   padding: 5px;
-  border-radius: 10%;
+  border-radius: 25px;
+  padding: 5px 10px;
   font-family: var(--font-secundaria);
+}
+
+.individualPagar{
+  background-color: var(--cor-destaque);
+  color: var(--cor-principal);
+  padding: 5px 10px;
+  margin: 0 10px;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5),
 }
 
 
@@ -202,10 +231,20 @@ body{
   padding: 5% 10%;
   font-family: var(--font-normal);
   font-size: 1,2rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.rodapeElegante{
+  display: flex;
+  justify-content: space-between;
 }
 
 .rodTexto{
-  margin: 10px 0;
+  margin: 10px 15px;
+  color: #E2C091;
 }
 
 .hide{
