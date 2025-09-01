@@ -142,3 +142,11 @@ Utilize cores apartir: #b78628 até #cfc5c5
 ---
 
 O font family da logo Amber é CINZEL DECORATIVE, as demais fontes são INTER.
+
+---
+
+Utilize o framework tailwindcss para estilizar o site de forma responsiva e moderna.
+
+---
+
+Utilize icons do Font Awesome para os elementos de destaque e informações.
