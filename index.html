@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amber - Perfumes Exclusivos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="./assets/imgs/logo.png" alt="Amber" class="logo-img">
+                    <span class="logo-text">AMBER</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#masculino" class="nav-link">Masculino</a></li>
+                    <li><a href="#feminino" class="nav-link">Feminino</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="video-container">
+            <video autoplay muted loop class="hero-video">
+                <source src="./assets/videos/home.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">AMBER</h1>
+                <p class="hero-slogan">Deixe sua marca por onde for</p>
+                <p class="hero-description">
+                    São perfumes exclusivos, com fragrâncias marcantes e envolventes, 
+                    que deixam uma impressão duradoura.
+                </p>
+                <div class="hero-info">
+                    <div class="info-item">
+                        <i class="fas fa-star"></i>
+                        <span>Fragrâncias Exclusivas</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Sob Encomenda</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-award"></i>
+                        <span>Qualidade Premium</span>
+                    </div>
+                </div>
+                <a href="#masculino" class="cta-button">Explorar Catálogo</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <div class="parallax-bg"></div>
+            <div class="about-content">
+                <h2 class="section-title">Perfumes Exclusivos</h2>
+                <p class="about-text">
+                    Nossos perfumes são cuidadosamente selecionados para oferecer fragrâncias únicas e marcantes. 
+                    Cada essência é uma experiência sensorial que desperta memórias e cria momentos inesquecíveis.
+                </p>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-gem"></i>
+                        <h3>Exclusividade</h3>
+                        <p>Fragrâncias únicas e sofisticadas</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shipping-fast"></i>
+                        <h3>Sob Encomenda</h3>
+                        <p>Produtos frescos e de qualidade garantida</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-heart"></i>
+                        <h3>Duradouro</h3>
+                        <p>Fixação prolongada e marcante</p>
+                    </div>
+                </div>
+                <div class="order-notice">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Perfumes exclusivos sob encomenda - prazo de entrega a consultar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filtros -->
+    <section class="filters-section">
+        <div class="container">
+            <h2 class="section-title">Nosso Catálogo</h2>
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="search">Buscar:</label>
+                    <input type="text" id="search" placeholder="Digite o nome do perfume...">
+                </div>
+                <div class="filter-group">
+                    <label>Categoria:</label>
+                    <button class="filter-btn active" data-filter="todos">Todos</button>
+                    <button class="filter-btn" data-filter="masculino">Masculino</button>
+                    <button class="filter-btn" data-filter="feminino">Feminino</button>
+                </div>
+                <div class="filter-group">
+                    <label>Tipo:</label>
+                    <button class="filter-btn active" data-filter="todos-tipos">Todos</button>
+                    <button class="filter-btn" data-filter="normal">Normal</button>
+                    <button class="filter-btn" data-filter="especial">Especial</button>
+                </div>
+                <div class="filter-group">
+                    <label>Preço:</label>
+                    <select id="price-filter">
+                        <option value="todos">Todos os preços</option>
+                        <option value="ate-80">Até R$ 80</option>
+                        <option value="80-120">R$ 80 - R$ 120</option>
+                        <option value="acima-120">Acima de R$ 120</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perfumes Masculinos -->
+    <section id="masculino" class="products-section masculino-section">
+        <div class="container">
+            <h2 class="section-title">Perfumes Masculinos</h2>
+            <div class="products-grid" id="masculino-grid">
+                <!-- Produtos serão inseridos aqui via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Perfumes Femininos -->
+    <section id="feminino" class="products-section feminino-section">
+        <div class="container">
+            <h2 class="section-title">Perfumes Femininos</h2>
+            <div class="products-grid" id="feminino-grid">
+                <!-- Produtos serão inseridos aqui via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="./assets/imgs/logo.png" alt="Amber" class="logo-img">
+                        <span class="logo-text">AMBER</span>
+                    </div>
+                    <p>Deixe sua marca por onde for com nossas fragrâncias exclusivas.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fab fa-whatsapp"></i> (24) 99310-6425</p>
+                    <p><i class="fas fa-clock"></i> Atendimento: 9h às 18h</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Informações</h3>
+                    <p><i class="fas fa-truck"></i> Entrega sob encomenda</p>
+                    <p><i class="fas fa-shield-alt"></i> Qualidade garantida</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Amber Perfumes. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Produto -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="">
+                <div class="modal-info">
+                    <h2 id="modal-name"></h2>
+                    <p id="modal-type"></p>
+                    <div class="modal-prices">
+                        <div class="price-option">
+                            <span class="size">50ml</span>
+                            <span class="price" id="modal-price-50ml"></span>
+                            <button class="buy-btn" id="buy-50ml">Comprar</button>
+                        </div>
+                        <div class="price-option">
+                            <span class="size">100ml</span>
+                            <span class="price" id="modal-price-100ml"></span>
+                            <button class="buy-btn" id="buy-100ml">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
