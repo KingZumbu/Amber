@@ -1,7 +1,7 @@
 .sr-showroom {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: transparent;
 }
 
 .sr-showroom .sr-container {
@@ -98,11 +98,13 @@
     position: relative;
     display: block;
     min-width: 100vw;
+    
 }
 
 .sr-showroom .sr-content > ul > li > img {
     display: block;
     margin: auto;
+    border-radius: 25px;
 }
 
 @keyframes sr-showroom-autoslider {
@@ -116,7 +118,7 @@
 /* Mobile Devices (up to 767px) */
 @media only screen and (max-width: 767px) {
     .sr-showroom .sr-content > ul > li > img {
-        width: 70vw;
+        width: 50vw;
     }
 }
 

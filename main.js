@@ -673,6 +673,20 @@ function escolherFeminino(){
     document.getElementById("opcoesFemininas").classList.remove('hide')
 }
 
+function enviarMensagemWhatsAppDestaque(alfa, beta) {
+  const bala = `produto${alfa}inicial`;
+  const nomePerfume = perfumes[bala]["nome"];
+
+  const mensagem = `Eu quero o perfume ${nomePerfume}, do tamanho de ${beta}`;
+  const mensagemCodificada = encodeURIComponent(mensagem);
+
+  // Construir o link da API do WhatsApp
+  const linkWhatsApp = `https://api.whatsapp.com/send?phone=${meuCelular}&text=${mensagemCodificada}`;
+
+  // Abrir o link em uma nova aba
+  window.open(linkWhatsApp, '_blank');
+}
+
 
 
 
